@@ -2,8 +2,8 @@ require 'pry'
 require 'rspec'
 require 'capybara/rspec'
 
-require_relative 'support/database_cleaner'
 require_relative '../app.rb'
+require_relative 'support/database_cleaner'
 
 require 'valid_attribute'
 require 'shoulda/matchers'
