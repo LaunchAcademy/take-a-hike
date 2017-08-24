@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-describe TripParticipation do
+describe TripParticipation, type: :model do
   it { should belong_to :hiker }
   it { should belong_to :trip }
-  
+
   it { should have_valid(:trip).when(Trip.new) }
   it { should_not have_valid(:trip).when(nil) }
 

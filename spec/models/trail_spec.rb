@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Trail do
+describe Trail, type: :model do
   it { should have_valid(:name).when('Rittenhouse', 'Appalachian') }
   it { should_not have_valid(:name).when('', nil) }
 

@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Hiker do
+describe Hiker, type: :model do
   it { should have_valid(:experience_level).when('beginner', 'expert')}
   it { should_not have_valid(:experience_level).when(nil, '', 'medium')}
 

@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Trip do
+describe Trip, type: :model do
   it { should have_valid(:name).when('Saturday stroll', 'Thriving Thursday') }
   it { should_not have_valid(:name).when(nil, '')}
 
