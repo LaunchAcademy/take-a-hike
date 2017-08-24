@@ -11,5 +11,5 @@ describe Trip, type: :model do
   it { should belong_to :trail }
 
   it { should have_many :hikers }
-  it { should have_many :trip_partipations }
+  it { should have_many :trip_participations }
 end
