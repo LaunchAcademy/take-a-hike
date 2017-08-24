@@ -1,5 +1,5 @@
-class CreateTrail < ActiveRecord::Migration
-  def up
+class CreateTrails < ActiveRecord::Migration
+  def change
     create_table :trails do |t|
       t.string :name, null: false
       t.integer :length, null: false
