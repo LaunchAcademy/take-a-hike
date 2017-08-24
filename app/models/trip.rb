@@ -1,7 +1,7 @@
 class Trip < ActiveRecord::Base
   validates :name, presence: true
   validates :started_on, presence: true
-  validate :trail, presence: true
+  validates :trail, presence: true
 
   belongs_to :trail
   has_many :trip_participations
