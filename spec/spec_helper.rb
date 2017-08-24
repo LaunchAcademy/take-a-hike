@@ -8,8 +8,10 @@ require_relative 'support/database_cleaner'
 require 'valid_attribute'
 require 'shoulda/matchers'
 
-set :environment, :test
-set :database, :test
+configure :test do
+  set :environment, :test
+  set :database, :test
+end
 
 ActiveRecord::Base.logger.level = 1
 
